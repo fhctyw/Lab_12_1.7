@@ -1,3 +1,4 @@
+// LongLong.cpp
 #include "LongLong.h"
 #include <iostream>
 #include <sstream>
@@ -46,6 +47,7 @@ long long LongLong::getLongLong() const
 LongLong add(LongLong l1, LongLong l2)
 {
 	LongLong ll;
+
 	long long ll1 = l1.getLongLong();
 	long long ll2 = l2.getLongLong();
 	long long r = ll1 + ll2;
@@ -121,4 +123,14 @@ bool lessthan(LongLong l1, LongLong l2)
 bool greatthan(LongLong l1, LongLong l2)
 {
 	return l1.getLongLong() > l2.getLongLong();
+}
+
+bool equal(LongLong l1, LongLong l2)
+{
+	return l1.getLongLong() == l2.getLongLong();
+}
+
+bool nequal(LongLong l1, LongLong l2)
+{
+	return !equal(l1, l2);
 }

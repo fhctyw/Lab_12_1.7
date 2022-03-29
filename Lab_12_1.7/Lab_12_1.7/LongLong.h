@@ -1,3 +1,4 @@
+// LongLong.h
 #pragma once
 #include <string>
 
@@ -23,6 +24,8 @@ public:
 
 	bool friend lessthan(LongLong l1, LongLong l2);
 	bool friend greatthan(LongLong l1, LongLong l2);
+	bool friend equal(LongLong l1, LongLong l2);
+	bool friend nequal(LongLong l1, LongLong l2);
 private:
 	long long getLongLong() const;
 };

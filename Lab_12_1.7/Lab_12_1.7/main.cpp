@@ -2,7 +2,6 @@
 #include <iostream>
 #include <Windows.h>
 #include "Cursor.h"
-#include "LongLong.h"
 using namespace std;
 
 int main()
@@ -20,10 +19,12 @@ int main()
 
 	cur.display();
 
-	cur.move(13, -3);
+	cur.move(20, 20);
 	cur.SizeDown();
 	
 	cur.display();
+
+
 
 	return 0;
 }
